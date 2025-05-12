@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { useAuth0 } from '@auth0/auth0-react';
 import { getStoredCustomer } from '@/lib/auth';
+import { api } from '@/lib/api';
+import { createUserSession, getUserInfo, selectCustomer } from '@/lib/auth';
 
 export default function Home() {
   const router = useRouter();
