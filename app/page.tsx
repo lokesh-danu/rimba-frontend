@@ -13,6 +13,8 @@ export default function Home() {
     if (!isAuthenticated) {
       // loginWithRedirect();
       console.log("bypass login")
+      router.push('/select-customer');  
+      
     } else {
       const customer = getStoredCustomer();
       if (customer) {
