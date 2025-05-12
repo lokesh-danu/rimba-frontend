@@ -35,7 +35,7 @@ export default function SelectCustomerPage() {
       console.log("here")
       // router.push('/');
     }
-  }, [router]);
+  }, []);
 
 
   useEffect(() => {
