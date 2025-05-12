@@ -93,7 +93,7 @@ export default function SelectCustomerPage() {
             await selectCustomer(userInfoResponse.customers[0].id);
           }
           console.log('redirecting to home');
-          // router.push('/'); // redirect after processing
+          router.push('/'); // redirect after processing
         } catch (err) {
           console.error('Error getting token:', err);
         }
