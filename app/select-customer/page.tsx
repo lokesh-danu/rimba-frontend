@@ -72,8 +72,8 @@ export default function SelectCustomerPage() {
           } catch (error) {
             console.error('getUserInfo call failed:', error);
             // Trigger logout on any error
-            api.logout();
-            logout({ logoutParams: { returnTo: window.location.origin } });
+            // api.logout();
+            // logout({ logoutParams: { returnTo: window.location.origin } });
             console.log('logging out from callback page');
           }
 
