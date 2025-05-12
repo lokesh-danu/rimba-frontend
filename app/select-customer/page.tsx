@@ -108,5 +108,9 @@ export default function SelectCustomerPage() {
     );
   }
 
-  return <CustomerSelect customers={customers} />;
+  return
+    <>
+    {/* <CustomerSelect customers={customers} />; */}
+      here ia m 
+    </>
 }
