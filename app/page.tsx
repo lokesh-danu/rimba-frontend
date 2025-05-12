@@ -11,7 +11,8 @@ export default function Home() {
 
   useEffect(() => {
     if (!isAuthenticated) {
-      loginWithRedirect();
+      // loginWithRedirect();
+      console.log("bypass login")
     } else {
       const customer = getStoredCustomer();
       if (customer) {
