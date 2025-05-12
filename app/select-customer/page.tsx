@@ -5,6 +5,8 @@ import { useRouter } from 'next/navigation';
 import { getStoredUser } from '@/lib/auth';
 import { type Customer } from '@/lib/types';
 import { CustomerSelect } from './components/customer-select';
+import { api } from '@/lib/api';
+
 
 export default function SelectCustomerPage() {
   const router = useRouter();
@@ -68,7 +70,7 @@ export default function SelectCustomerPage() {
           } catch (error) {
             console.error('getUserInfo call failed:', error);
             // Trigger logout on any error
-            // api.logout();
+            api.logout();
             logout({ logoutParams: { returnTo: window.location.origin } });
             console.log('logging out from callback page');
           }
