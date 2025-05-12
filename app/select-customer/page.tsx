@@ -29,10 +29,11 @@ export default function SelectCustomerPage() {
         setCustomers(parsedCustomers);
       } catch (error) {
         console.error('Error parsing stored customers:', error);
-        router.push('/');
+        // router.push('/');
       }
     } else {
-      router.push('/');
+      console.log("here")
+      // router.push('/');
     }
   }, [router]);
 
