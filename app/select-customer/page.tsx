@@ -6,6 +6,7 @@ import { getStoredUser } from '@/lib/auth';
 import { type Customer } from '@/lib/types';
 import { CustomerSelect } from './components/customer-select';
 import { api } from '@/lib/api';
+import { createUserSession, getUserInfo, selectCustomer } from '@/lib/auth';
 
 
 export default function SelectCustomerPage() {
