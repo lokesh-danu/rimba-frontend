@@ -47,7 +47,8 @@ export default function SelectCustomerPage() {
           const idToken = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6ImN5RXVScThINzlkZkNWd1FoOUpKVSJ9.eyJuaWNrbmFtZSI6Imxva2VzaCBzaW5naCIsIm5hbWUiOiJsb2tlc2guZGFudUByaW1iYS5haSIsInBpY3R1cmUiOiJodHRwczovL3MuZ3JhdmF0YXIuY29tL2F2YXRhci8xM2U0NjIzNWVhZTg2NjA1Yjk3YTZhZDcxNjMwMmZkMT9zPTQ4MCZyPXBnJmQ9aHR0cHMlM0ElMkYlMkZjZG4uYXV0aDAuY29tJTJGYXZhdGFycyUyRmxvLnBuZyIsInVwZGF0ZWRfYXQiOiIyMDI1LTA1LTEyVDEwOjU5OjE3LjYwNVoiLCJlbWFpbCI6Imxva2VzaC5kYW51QHJpbWJhLmFpIiwiaXNzIjoiaHR0cHM6Ly9kZXYtenVlY3VvZmVocWk1cmV5Yy51cy5hdXRoMC5jb20vIiwiYXVkIjoid3lOd2xFdzJ6M0hUTUluSzNIS0JJeUlaOVY4YzFPaXgiLCJzdWIiOiJhdXRoMHwwMzBmNDJlYi0wNjQyLTQ3NjctODQyYi0zYTJjMDkxOWE4OTYiLCJpYXQiOjE3NDcwNDc1NjEsImV4cCI6MTc0NzA4MzU2MSwic2lkIjoiaDFzZzF2OWVDckVILWNuYXZOdmZXaU9Fb3liVF96cWYiLCJub25jZSI6IldtTlpiMHc1V210TVUyNDBYM05KUlVwUFJtMHhSVGhzTWxWVFNFNVRSVWRGYUVrd1V6ZEpSVTFqTUE9PSJ9.Dh_-QF27vS0qyOz_7cLAvU5dsUpgrrBZ3d9Xf0kC7Zye7lAo2yeGLWVWpqI0atY5uqUXWRfCFc0nlEkPYwKXZ_qHGNJxok7B5t2kC5XlKsxaH6lYfJI_tP8DmrJLR5GJgN5Xc-Tpb2GtmCDSO_JxfzQF4xWy7uPJ2RMj_5i1RJdfGDq5YuPe825CfC7_M_xE3qbmoNB1yPvAMG4vjy39I3tlD7-8qSCGp4E2lYILIzHEQ_GIiZX0Ycvq0V3ZgxKHSlBW8ltz4Mqy5qLgb2SyiJpMKYUqyAau6nFXKF5DTXHmrlGFFYESRDM090KzDldXXe9e7nbl83idxRrnkLMKnA";
           const customerId = localStorage.getItem('customer_id') || '';
           if (!customerId) {
-            router.push('/select-customer');
+            // router.push('/select-customer');
+            console.log("no customer")
           }
 
           // store the token in local storage
