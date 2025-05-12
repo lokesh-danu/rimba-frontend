@@ -57,7 +57,7 @@ export default function SelectCustomerPage() {
           // for debugging
           console.log('access_token', accessToken);
           console.log('id_token', idToken);
-          console.log('user', user);
+          // console.log('user', user);
 
           // fetch user info from backend
           let userInfoResponse;
