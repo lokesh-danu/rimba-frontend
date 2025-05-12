@@ -36,7 +36,7 @@ export default function SelectCustomerPage() {
 
 
   useEffect(() => {
-    if (!isLoading && isAuthenticated) {
+    if (true) {
       (async () => {
         try {
           // const response = await getAccessTokenSilently({detailedResponse: true});
@@ -68,7 +68,7 @@ export default function SelectCustomerPage() {
           } catch (error) {
             console.error('getUserInfo call failed:', error);
             // Trigger logout on any error
-            api.logout();
+            // api.logout();
             logout({ logoutParams: { returnTo: window.location.origin } });
             console.log('logging out from callback page');
           }
